@@ -1,0 +1,19 @@
+.listUsers{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin: 1%;
+
+  border: 1px solid black;
+}
+.post{
+  border: 1px solid;
+  width: 10%;
+  height: 5%;
+}
+.listePost{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
