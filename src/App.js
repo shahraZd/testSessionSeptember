@@ -1,23 +1,28 @@
-import React from "react";
-import "./App.css";
-import Contactuser from "./pages/contactuser";
-import Post from "./pages/post";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Details from "./pages/details";
+import React ,{Component} from 'react';
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/">
-          <Contactuser />
-        </Route>
-        <Route path="/Post/:id" component={Post} />
-        <Route exact path="/Details/:id" component={Details} />
+import Contacts from './component/contacts';
 
-      </Switch>
-    </BrowserRouter>
-  );
+
+class App extends Component {
+  
+  render() {
+    return (
+        <Contacts contacts={this.state.contacts} />
+    )
+}
+
+state = {
+    contacts: []
+};
+
+componentDidMount() {
+    fetch('http://jsonplaceholder.typicode.com/users')
+        .then(res => res.json())
+        .then((data) => {
+            this.setState({ contacts: data })
+        })
+        .catch(console.log)
+}
 }
 
 export default App;
