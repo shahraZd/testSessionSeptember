@@ -1,0 +1,37 @@
+.user-box {
+  color: black;
+  border: black solid 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.single-user {
+  width: 25%;
+  margin: 10px;
+  border: solid 1px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.single-post {
+  width: 25%;
+  margin: 10px;
+  border: solid 1px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.post-box {
+  color: black;
+  border: black solid 1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
