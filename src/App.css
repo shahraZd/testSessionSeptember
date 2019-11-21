@@ -1,0 +1,23 @@
+
+
+
+.container-movie{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px grey;
+  
+}
+.top-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0px;
+}
+.one-post{
+  border: solid 1px grey;
+  width: 300px;
+}
+.wrap-post{
+  display: flex;
+  flex-wrap: wrap;
+}
